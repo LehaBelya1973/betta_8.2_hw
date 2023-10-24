@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "betta-8-2-hw"
+version = "0.1.0"
+description = ""
+authors = ["Aleksey Belyaev <lesha.belyaev.73@mail.ru>"]
+readme = "README.md"
+packages = [{include = "betta_8"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^6.1.0"
+black = "^23.10.0"
+mypy = "^1.6.1"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
