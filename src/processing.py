@@ -1,4 +1,4 @@
-def state_into(list_data: list[dict], state: str = "EXECUTED"):
+def state_into(list_data: list[dict], state: str = "EXECUTED") -> list[dict]:
     """Функция принимает на вход список словарей
     и значение для ключа state
     (опциональный параметр со значением по умолчанию
@@ -12,7 +12,7 @@ def state_into(list_data: list[dict], state: str = "EXECUTED"):
     return result_list
 
 
-def sort_date(list_data: list[dict], keys: bool = False):
+def sort_date(list_data: list[dict], keys: bool = False) -> list[dict]:
     """Функция принимает на вход список словарей
     и возвращает новый список,
     в котором исходные словари отсортированы по убыванию даты (ключ
